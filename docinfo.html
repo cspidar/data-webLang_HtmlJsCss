@@ -1,0 +1,80 @@
+<script src="./asset/main.js"></script>
+
+<!-- <script src="https://unpkg.com/pagedjs/dist/paged.polyfill.js"></script> -->
+<script src="./asset/paged.polyfill.js"></script>
+<!-- <script src="./asset/paged.polyfill.js">
+  window.PagedConfig = {
+    auto: false,
+    after: (flow) => {
+      console.log("after", flow);
+    },
+  };
+
+  setTimeout(() => {
+    window.PagedPolyfill.preview();
+  }, 1000);
+</script> -->
+
+<style>
+  .uiButton {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 999;
+    background-color: rgba(110, 110, 110, 0.212);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 0.4rem 0.5rem;
+    min-height: 30px;
+    min-width: 60px;
+  }
+  .uiButton {
+    appearance: none;
+    background-color: #49494934;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #3b3b3b;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+
+    outline: none;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /* width: 100%; */
+    will-change: transform;
+  }
+
+  .uiButton:disabled {
+    pointer-events: none;
+  }
+
+  .uiButton:hover {
+    color: #fff;
+    background-color: #1a1a1a;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 5px 10px;
+    transform: translateY(-1px);
+  }
+
+  .uiButton:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  .uiButton.pdf {
+    bottom: 100px;
+  }
+</style>
+
+<!-- <script src="./asset/paged.js"></script> -->
